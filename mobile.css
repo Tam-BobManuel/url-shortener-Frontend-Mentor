@@ -1,0 +1,209 @@
+:root{
+    --body-font: "Poppins", sans-serif;
+      /* COLOURS */
+  /* PRIMARY */
+      --Cyan: hsl(180, 66%, 49%);
+      --DarkViolet: hsl(257, 27%, 26%);
+      --white: rgb(255, 254, 254);
+      --Black: black;
+
+  /* SECONDARY */
+      --Red: hsl(0, 87%, 67%);
+
+  /* NEUTRAL */
+      --Gray: #e1e2eb;
+      --myGray: hsl(0, 0%, 75%);
+      --GrayishViolet: hsl(257, 7%, 63%);
+      --VeryDarkBlue: hsl(255, 11%, 22%);
+      --VeryDarkViolet: hsl(260, 8%, 14%);
+  /* BODY PADDING */
+      --padding: 0 8% 0 8%;
+}
+
+        /* MOBILE NAVIGATION MADE TO NOT SHOW ON LARGER SCREEN */
+
+.navMob{
+    display: none;
+}
+
+        /* MOBILE DESIGN */
+@media screen and (max-width: 590px) {
+
+            /* MOBILE NAV BAR DROP-DOWN HANDLED HERE */
+
+    .navMob{
+        position:absolute;
+        display: none;
+        text-align: center;
+        margin: 3% 10%;
+        width: 80%;
+        box-sizing: border-box;
+        background-color: var(--DarkViolet);
+        padding: 4%;
+        border-radius: 20px;
+    }
+    .navMob > hr{
+        background-color: var(--white);
+    }
+    .navMob > ul{
+        list-style: none;
+        padding: 0%;
+        width: 100%;
+    }
+    .navMob > ul > li{
+        margin: 5%;
+    }
+    .navBtnLi{
+        padding: 1%;
+        background-color: var(--Cyan);
+        border-radius: 20px;
+    }
+    .navMobLink{
+        color: var(--white);
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .navBtn{
+        background-color: var(--Cyan);
+        width: 100% !important;
+    }
+
+        /* DEFAULT NAV BAR MADE TO SHOW HOW WE WANT ON MOBILE */
+    .ulFi > li{
+        display: none;
+    }
+    .ulSec > li,button{
+        display: none;
+    }
+    .headerTxt > button{
+        display: inline-block;
+    }
+
+            /* HAMBURGER BARS */
+            
+    .manuBars{
+        display: inline-block;
+    }
+
+    .headerContent{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .headerTxt,.headerImg{
+        width: 100%;
+    }
+    .headerImg > img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .headerTxt > h1{
+        font-weight: bolder;
+        font-size: 3rem;
+    }
+
+
+                /* INPUT FOR FOR URL MADE RESPONSIVE */
+    form{
+        flex-direction: column;
+        background-image: url(images/bg-shorten-mobile.svg);
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+    .formInput{
+        display: flex;
+        flex-direction: column;
+    }
+    .formInput > input{
+        width: 100%;
+    }
+    .formInput > button{
+        width: 100%;
+        padding: 1rem;
+        margin-top: 4%;
+    }
+
+        /* RESULT CLASS STYLED FOR MOBILE */
+    .result{
+        padding: 2%;
+        margin-top: 10%;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+    .result > p{
+        width: 100%;
+        padding: 1rem;
+        margin-top: 4%;
+    }
+    .result > a{
+        text-align: left !important;
+        width: 100%;
+        padding: 1rem;
+        margin-top: 4%;
+        box-sizing: border-box;
+    }
+    .result > button{
+        width: 100%;
+        padding: 1rem;
+        margin-top: 4%;
+    }
+
+                /* THE SECTION BEFORE THE FOOTER STYLED FOR RESPONSIVITY */
+
+    .boostLink{
+        background-image: url(images/bg-boost-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: var(--DarkViolet);
+        padding: 4%;
+    }
+    .boostLink> button{
+        display: inline-block;
+        padding: 2%;
+    }
+
+            /* OUR FOOTER SECTION */
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footCont{
+        flex: 2;
+    }
+    .footImg,.footCont{
+        margin-top: 30px;
+        width: 100%;
+        padding: 3px;
+    }
+}
+
+                    /* I USED THE MEDIA Q BELOW SPECIFICALLY TO HANDLE THE 3 BLOCKS
+                    AT THE ADVANCE STATS SECTION
+                    */
+
+@media screen and (max-width: 813px) {
+    .section-3-blocks {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 80%;
+      }
+      
+    .section-3-blocks img{
+        margin-left: 37%;
+    }
+    
+      .section-3-blocks::before {
+        width: 8px;
+        height: 75%;
+        top: 0;
+        left: 50%;
+      }
+      .section-3-blocks div:nth-child(2) {
+        margin-top: 2rem;
+      }
+    
+      .section-3-blocks div:nth-child(3) {
+        margin-top: 2rem;
+      }
+}

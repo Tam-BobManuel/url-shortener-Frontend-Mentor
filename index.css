@@ -1,0 +1,401 @@
+        /* A WORD FROM THE DEV BEFORE YOU SCROLL THROUGH */
+
+        /* 
+        I USED TWO STYLE SHEETS FOR THE CSS;
+        INDEX.HTML - HANDLES LARGER SCREENS
+        MOBILE.CSS - HANDLES MOBILE DEVICES FROM 590PX AND BELOW
+
+        I ALSO USED A SECOND MEDIA QUERY THAT ACTIVATES FROM 813px AND BELOW
+        IT WAS USED SPECIFICALLY TO DEAL WITH THE 3 BLOCKS AT THE 
+        ADVANCE STATS SECTION OF THIS WEBPAGE
+        */
+
+        /* THAT'S ALL I HAVE TO SAY ENJOY 😄 */
+
+            /* VARIABLES */
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+:root{
+      --body-font: "Poppins", sans-serif;
+        /* COLOURS */
+    /* PRIMARY */
+        --Cyan: hsl(180, 66%, 49%);
+        --DarkViolet: hsl(257, 27%, 26%);
+        --white: rgb(255, 254, 254);
+        --Black: black;
+
+    /* SECONDARY */
+        --Red: hsl(0, 87%, 67%);
+
+    /* NEUTRAL */
+        --Gray: #e1e2eb;
+        --myGray: hsl(0, 0%, 75%);
+        --GrayishViolet: hsl(257, 7%, 63%);
+        --VeryDarkBlue: hsl(255, 11%, 22%);
+        --VeryDarkViolet: hsl(260, 8%, 14%);
+    /* BODY PADDING */
+        --padding: 0 10% 0 10%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        /* BODY */
+body{
+    font-family: var(--body-font);
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Poppins",url(https://fonts.google.com/specimen/Poppins);
+    padding: 3% 0% 0% 0%;
+    margin: 0%;
+}
+
+.hidden{
+    display: none;
+}
+.seen{
+    display: block;
+}
+        /* HEADER TAG */
+
+        /* Navigation bar */
+nav{
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    font-weight: bold;
+    color: var(--GrayishViolet);
+    padding: var(--padding);
+}
+    /* NAVIGATION LIST ITEMS  */
+nav > ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+}
+.ulFi{
+    width: 50%;
+    display: flex;
+    text-align: center;
+}
+.ulFi > li{
+    flex: 1;
+}
+.ulFi > li > a , .ulSec > li > a{
+    text-decoration: none;
+    color: var(--myGray);
+}
+.ulFi > li > a:hover, .ulSec > li > a:hover{
+    color: var(--Black);
+}
+ul > li{
+    margin: 5px;
+}
+.ulSec{
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+            /* OUR NAVIGATION BURGER MENU */
+.manuBars{
+    display: none;
+}
+
+                /* Button */
+button{
+    background-color: var(--Cyan);
+    color: var(--white);
+    border-radius: 20px;
+    padding: auto;
+    border: 1px solid var(--Cyan);
+    font-size:medium;
+    font-weight: bold;
+}
+button:hover{
+    cursor: pointer;
+}
+
+             /* HEADER CONTENT */
+.headerContent{
+    display: flex;
+    overflow: hidden;
+    padding: var(--padding);
+}
+.headerTxt > button{
+    padding: 5px;
+}
+.headerTxt{
+    box-sizing: border-box;
+    width: 50%;
+    display: inline-block;
+    padding: auto;
+    margin: auto;
+}
+.headerTxt > h1{
+    font-weight: bolder;
+    font-size: 4rem;
+}
+.headerImg{
+    box-sizing: border-box;
+    width: 50%;
+    display: inline-block;
+    margin: 0%;
+}
+
+                    /* FORM */
+form{
+    width: 85%;
+    max-width: 100%;
+    margin: auto;
+    background-image: url(images/bg-shorten-desktop.svg);
+    background-size: cover;
+    background-color: var(--DarkViolet);
+    padding: 4%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: static;
+    z-index: 1;
+    justify-content: space-around;
+    transform: translate(0, 50%);
+}
+
+            /* ERROR MESSAGE FOR THE URL SHORTENER INPUT */
+.urlErr{
+    /* display: none; */
+    margin-top: 1%;
+    color: var(--Red);
+}
+
+                /* URL SHORTENER INPUT */
+.formInput{
+    display: flex;
+}
+.err{
+    border: 3px solid var(--Red);
+}
+.formInput > input{
+    box-sizing: border-box;
+    width: 80%;
+    display: inline-block;
+    padding: 1rem;
+    margin-right: 2%;
+    border-radius: 10px;
+}
+input::placeholder {
+    font-weight: bold;
+}
+  
+.formInput > button{
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 15%;
+    display: inline-block;
+    padding: auto;
+    margin-right: 0%;
+    border-radius: 10px;
+}
+            /* PSUEDO IS THE DIV DIRECTLY UNDER OUR INPUT
+            IT IS USED TO GIVE SPACING AND IS THE PARENT DIV OF 
+            OUR RESULT
+             */
+
+.psuedo{
+    padding: 10% 0 2% 0;
+    background-color: var(--Gray);
+    margin-bottom: 0%;
+}
+
+            /* RESULT STYLED HERE */
+.result{
+    border: 1px solid black;
+    margin-top: 3%;
+    display: flex;
+    width: 80%;
+    max-width: 100%;
+    margin: auto;
+    padding: 0.5%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: x-large;
+    font-weight: bolder;
+    background-color: var(--white);
+}
+.result > p, .resultP{
+    width: 55%;
+    max-width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 1%;
+}
+.result > a, .resultA{
+    width: 40%;
+    max-width: 100%;
+    text-align: right;
+    margin: auto;
+    padding: 1%;
+    text-decoration: none;
+    color: var(--Cyan);
+}
+.result > button, .resultBtn{
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 15%;
+    display: inline-block;
+    padding: auto;
+    margin-right: 0%;
+    border-radius: 5px;
+}
+.result > button:first-of-type, .resultBtn{
+    background-color: var(--Cyan);
+    /* display: none; */
+}
+.result > button:last-of-type, .resultCp{
+    display: none;
+    background-color: var(--DarkViolet);
+}
+
+                /* ADVANCE STATISTICS SECTION  */
+.advStat{
+    border: solid var(--Gray);
+    margin-top: 0%;
+    background-color: var(--Gray);
+    padding-bottom: 4%;
+}
+.advStat > h2, .advStat > p{
+    text-align: center;
+    font-weight: bolder;
+}
+.advStat > h2{
+    font-size: 3rem;
+}
+.advStat > p{
+    font-size: 1.7rem;
+    color: var(--GrayishViolet);
+}
+
+                /* UNDER THE ADVANCE STATISTICS SECTION WE STYLED THE 3 TRCIKY BLOCKS*/
+.section-3-blocks {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+    width: 77%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+  }
+
+  .section-3-blocks::before {
+    content: "";
+    width: 75%;
+    height: 8px;
+    top: 55%;
+    left: 10%;
+    background-color: var(--Cyan);
+    position: absolute;
+    z-index: 0;
+  }
+  
+  .section-3-blocks > * {
+    border-radius: 10px;
+    background-color: var(--white);
+    z-index: 2;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .section-3-blocks img {
+    position: static;
+    background-color: var(--DarkViolet);
+    padding: 1.2rem;
+    border-radius: 50%;
+    position: relative;
+    
+    transform: translate(30%, -50%);
+    z-index: 1;
+  }
+  .section-3-blocks h3 {
+    margin-top: -1rem;
+    padding-right: 1.9rem;
+    padding-left: 1.9rem;
+  }
+  .section-3-blocks p {
+    padding: 1rem 1.9rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .section-3-blocks div:nth-child(2) {
+    margin-top: 4rem;
+  }
+  
+  .section-3-blocks div:nth-child(3) {
+    margin-top: 10rem;
+  }
+
+                /* HERE IS THE SECTION TO BOOST YOUR LINKS */
+.boostLink{
+    background-image: url(images/bg-boost-desktop.svg);
+    background-size: cover;
+    background-color: var(--DarkViolet);
+    padding: 4%;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+}
+.boostLink > h2{
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.boostLink> button{
+    padding: 0.5%;
+}
+
+            /* FOOTER */
+
+footer{
+    background-color: var(--VeryDarkBlue);
+    color: var(--white);
+    padding: 4%;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+footer > div > ol > li{
+    color: var(--myGray);
+    margin: 5px;
+}
+footer > div > ol > li > a {
+    text-decoration: none;
+    color: var(--myGray);
+    font-weight: bold;
+}
+footer > div > ol > li > a:hover{
+    color: var(--Cyan);
+}
+ol{
+    list-style: none;
+    padding: 0%;
+}
+.footImg{
+    width: 40%;
+    max-width: 100%;
+}
+.footCont{
+    flex: 3;
+}
+
+            /* MY ATTRIBUTIONS */
+.attribution{
+    color: white;
+    background-color: var(--VeryDarkBlue);
+    font-size: 15px; 
+    text-align: center; 
+}
+.attribution > a {
+    color: var(--Cyan);
+}

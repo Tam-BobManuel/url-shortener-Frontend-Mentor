@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="mobile.css">
+
+        <!-- jQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
+
+        <!-- MY OWN JAVASCRIPT -->
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <nav role="navigation">
+      <ul class="ulFi">
+        <img role="img" src="images/logo.svg" alt="" srcset="">
+        <li role="listitem"><a href="#">Features</a></li>
+        <li role="listitem"><a href="#">Pricing</a></li>
+        <li role="listitem"><a href="#">Resources</a></li>
+      </ul>
+      <ul class="ulSec" role="list">
+        <svg class="manuBars" onclick="openMobileMenu()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        <button>&nbsp; Sign Up &nbsp;</button>
+        <li role="listitem"><a href="#">Login</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="navMob">
+      <ul>
+        <li><a class="navMobLink" href="#">Features</a></li>
+        <li><a class="navMobLink" href="#">Pricing</a></li>
+        <li><a class="navMobLink" href="#">Resources</a></li>
+      </ul>
+      <hr>
+      <ul>
+        <li><a class="navMobLink" href="#">Login</a></li>
+        <li class="navBtnLi"><a class="navMobLink navBtn" href="#">Sign Up</a></li>
+      </ul>
+    </div>
+
+
+    <div class="headerContent">
+      <div class="headerTxt">
+        <h1 role="heading">More than just shorter links</h1>
+      
+        <p>
+          Build your brand’s recognition and get detailed insights 
+          on how your links are performing.
+        </p>
+        <br>
+        <button>Get Started</button>
+      </div>
+      <div class="headerImg">
+        <img role="img" src="images/illustration-working.svg" alt="" srcset="">
+      </div>
+    </div>
+  </header>
+
+  
+  <form action="" method="post">
+    <div class="formInput">
+      <input class="urlInput" type="text" name="" id="" placeholder="Shorten a link here...">
+
+      <button class="urlBtn">Shorten It!</button>
+    </div>
+
+    <i class="urlErr"></i>
+  </form>
+
+  <div class="psuedo">
+          <!-- WARNING!!!!!!!! -->
+          <!-- DUMMY VALUE USED FORTESTING DO NOT DELETE PSUEDO DIV -->
+
+
+    <!-- <div class="result">
+      <p class="resultP">test/link</p>
+      <a href="#" class="resultA"> actual link</a>
+      <button type="submit" class="resultBtn">copy</button>
+      <button class="resultCp">Copied!</button>
+    </div> -->
+  </div>
+
+<section class="advStat">
+  <h2> Advanced Statistics</h2>
+  <p class="info">Track how your links are performing across the web with our
+    advanced statistics dashboard.</p>
+    <br>
+  <section class="section-3-blocks ">
+    <div>
+      <img src="images/icon-brand-recognition.svg" alt="" aria-hidden="true">
+      <h3> Brand Recognition</h3>
+      <p class="gray-p">Boost your brand recognition with each click. Generic links don’t
+        mean a thing. Branded links help instil confidence in your content.</p>
+    </div>
+    <div>
+      <img src="images/icon-detailed-records.svg" alt="" aria-hidden="true">
+      <h3>Detailed Records</h3>
+      <p class="gray-p">Gain insights into who is clicking your links. Knowing when and where
+        people engage with your content helps inform better decisions.</p>
+    </div>
+    <div>
+      <img src="images/icon-fully-customizable.svg" alt="" aria-hidden="true">
+      <h3> Fully Customizable</h3>
+      <p class="gray-p"> Improve brand awareness and content discoverability through customizable
+        links, supercharging audience engagement.</p>
+    </div>
+  </section>
+</section>
+
+<section class="boostLink">
+  <h2>Boost your links today</h2>
+
+  <button>&nbsp Get Started &nbsp</button>
+</section>
+
+<footer>
+  <div class=" footImg">
+    <img src="images/logo-white.svg" alt="" srcset="">
+  </div>
+  <div class="footCont">
+    <h3>Features</h3>
+
+    <ol>
+      <li><a href="#">Link Shortening</a></li>
+      <li><a href="#">Branded Links</a></li>
+      <li><a href="#">Analytics</a></li>
+    </ol>
+  </div>
+
+  <div class="footCont">
+    <h3>Resources</h3>
+
+    <ol>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Developers</a></li>
+      <li><a href="#">Support</a></li>
+    </ol>
+  </div>
+
+  <div class="footCont">
+    <h3>Company</h3>
+
+    <ol>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Our Team</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Contact</a></li>
+    </ol>
+  </div>
+  <div class="footCont">
+    <a href="https://twitter.com/tam_webdev"><img src="images/icon-twitter.svg" alt="" srcset=""></a>
+    <a href="https://www.facebook.com/southern.gloryy"><img src="images/icon-facebook.svg" alt="" srcset=""></a>
+    <a href="https://instagram.com/bobmanuel__?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"><img src="images/icon-instagram.svg" alt="" srcset=""></a>
+    <a href="https://www.pinterest.co.uk/bglorytb/"><img src="images/icon-pinterest.svg" alt="" srcset=""></a>
+  </div>
+</footer>
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io/profile/Tam-BobManuel" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="https://main--shiny-pithivier-e6bf38.netlify.app/">Tam Bob-manuel</a>.
+</div>
+
+</body>
+</html>

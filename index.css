@@ -260,7 +260,7 @@ input::placeholder {
                 /* ADVANCE STATISTICS SECTION  */
 .advStat{
     border: solid var(--Gray);
-    margin-top: 0%;
+    margin-top: 20px;
     background-color: var(--Gray);
     padding-bottom: 4%;
 }
